@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to my Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" href="https://fonts.googleapis.com/css?family=Montserrat" >
+ 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+      .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)fixed;
+  }
+  .bg-2 {
+    background-color: #333399; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+   .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+</style>
+</head>
+<body id="myPage">
+  <nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color:black";>Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#hello" style="color:black";>Hello</a></li>
+        <li><a href="#who" style="color:black";>Who</a></li>
+        <li><a href="#where" style="color:black";>Where</a></li>
+        <li><a href="#contact" style="color:black";>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <div class="container-fluid bg-1 text-center" id="hello">
+  <h3> Hello </h2>
+  <font color="black"> 
+  <img src="myself.jpg" width="20%" height="20%" class="img-responsive img-circle margin" style="display:inline" alt="Butterfly">
+  <h3>I'm Sashneeta Subahar</h3>
+</div>
+
+<div class="container-fluid text-center"  id="who">
+  <h3>Who Am I?</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>I'm a person who loves snow. Do you know that your favourite season could reveal your personality? Donning a warm sweater and curling up on the couch with a hot beverage to escape the cold might sound like my idea of an ideal afternoon.</p>
+      <img src="snow.jpg" class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    <div class="col-sm-4">
+      <p>Chai is not just a beverage, chai is love. Chai is an emotion, to be fair, chai is every emotion. Especially, Adrak Chai (Ginger tea) is my all time favourite. Who needs a guy when there's chai...Life is just like a cup of tea. It's all in how you make it.</p>
+      <img src="Chai.jpg" class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    <div class="col-sm-4">
+      <p>It was love at first sight the day I met the beach. I have always want to be wild, beautiful and free Just like the sea. An ocean breeze puts my mind at ease. If there's a heaven for me, I'm sure it has a beach attached to it. Sky above,sand below,peace within.</p>
+      <img src="Beach.jpg" class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    </div>
+</div>
+ 
+<div class="container-fluid  text-center" id="where">
+  <h3>Where To Find Me?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<div class="container-fluid" style id="contact">
+  <h3 class="text-center">Contact Me</h3>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact me and I'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Skudai, Johor</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +6010 829 2289</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> sashneetasubahar@gmail.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid bg4 text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Copyright © Sashneeta's Website 2021</p>
+</footer>
+</body>
+</html>
