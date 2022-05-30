@@ -1,0 +1,88 @@
+<!--
+Matric Number: A174559
+Name: Sashneeta Subahar
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 1 Deliverables</title>
+  <style>
+    html {
+    height:100%;
+    }
+    body {
+    height: 946px;
+    background:linear-gradient(to bottom, #cc66ff 0%, #66ffff 100%)fixed;
+  }
+  </style>
+</head>
+<body>
+<h1>Biodata Form</h1>
+<hr>
+<form method="post">
+  <table border="1" cellpadding="10">
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" placeholder="Insert your name"autofocus required pattern="[A-Z\s]+" title="Only uppercase letters"></td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" name="age" min="17" max="100" step="1" required></td>
+    </tr>
+    <tr>
+      <td>Sex:</td>
+      <td><input type="radio" name="sex" value="male" required>Male<br>
+      	<input type="radio" name="sex" value="female">Female</td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><textarea name="address" cols="50" rows="5" placeholder="Insert your address" required>Putrajaya</textarea></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="email" id="email" name="email" placeholder="Insert your email" autofocus required pattern=".+@gmail.com" title="???@gmail.com, where ??? is any character"></td>
+    </tr>
+    <tr>
+      <td>Date of Birth:</td>
+      <td><input type="date" name="dob" placeholder="mm/dd/yyyy" autofocus required></td>
+    </tr>
+    <tr>
+      <td>Height:</td>
+      <td><input disabled type="range" name="height" id="heightId" min = "100" max = "200" value = "150" oninput="outputId.value = heightId.value" required><output id="outputId">150</output>cm</td>
+    </tr>
+    <tr>
+      <td>Tel:</td>
+      <td><input type="tel" name="phone" placeholder="+60**-*******" autofocus required pattern="^(\+?6?01)[02-46-9]-*[0-9]{7}$|^(\+?6?01)[1]-*[0-9]{8}$" title="use this format: +60##-#######. +6015-####### is invalid"></td>
+    </tr>
+    <tr>
+      <td>My Favorite Color:</td>
+      <td><input type="color" name="color" autofocus required></td>
+    </tr>
+    <tr>
+      <td>FB/TW/IG:</td>
+      <td><input type="url" name="fbtwig" placeholder="Insert your URL" autofocus required></td>
+    </tr>
+    <tr>
+      <td>My Face Photo:</td>
+      <td><input type="file" name="photo" placeholder="Insert your URL" autofocus required></td>
+    </tr>
+    <tr>
+      <td>My University:</td>
+      <td>
+      <select name="university" id="university" size=6 required>
+      <option value="" selected>Select</option>
+      <option value="UKM">Universiti Putra Malaysia</option>
+      <option value="UKM">Universiti Kebangsaan Malaysia</option>
+	  <option value="UM">Universiti Malaya</option>
+	  <option value="UKM">Universiti Sains Malaysia</option>
+	  <option value="UKM">Universiti Teknologi Malaysia</option>   	
+	  </td> 
+    </tr>
+  </table>
+<hr>
+<input type="hidden" name="matricnum" value="a174559">
+<input type="submit" name="biodata_form" value="OK" formaction="http://lrgs.ftsm.ukm.my/users/a123456/week3lab/validate_biodata.php">
+<input type="reset" name="biodata_form" value="Reset">
+</form>
+</body>
+</html>
